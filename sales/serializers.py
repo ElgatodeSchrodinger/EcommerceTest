@@ -24,7 +24,7 @@ class CustomerSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ['id', 'name', 'parent_categ_id', 'icon']
 
 
 class SaleOrderSerializer(serializers.ModelSerializer):
